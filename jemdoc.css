@@ -368,3 +368,23 @@ table.imgtable, table.imgtable td {
 	border: none;
 	text-align: left;
 }
+
+@media screen and (max-width: 600px) {
+	table.profile-table,
+	table.profile-table tbody,
+	table.profile-table tr,
+	table.profile-table td {
+		display: block;
+		width: auto;
+	}
+
+	table.profile-table td {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	table.profile-table img {
+		max-width: 100%;
+		height: auto;
+	}
+}
