@@ -369,7 +369,48 @@ table.imgtable, table.imgtable td {
 	text-align: left;
 }
 
+.profile-links {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5em 1.5em;
+}
+
+.visitor-map {
+ max-width: 600px;
+ margin: 0 auto;
+ overflow: hidden;
+}
+
 @media screen and (max-width: 600px) {
+ table#tlayout, table#tlayout > tbody, table#tlayout > tbody > tr, #layout-menu, #layout-content {
+  display: block;
+  box-sizing: border-box;
+ }
+ #layout-menu .menu-category { display: none; }
+ #layout-menu .menu-item { display: inline-block; margin-right: 0.75em; }
+ table.album-gallery, table.album-gallery tbody { display: block; }
+ table.album-gallery tr { display: flex; flex-wrap: wrap; }
+ table.album-gallery td { display: block; box-sizing: border-box; width: 50%; }
+	table#tlayout {
+		width: 100%;
+	}
+
+	#layout-menu {
+		width: 100%;
+		white-space: normal;
+		padding: 0.5em;
+	}
+
+	#layout-content {
+		width: 100%;
+		overflow-wrap: break-word;
+	}
+
+	#layout-content img,
+	#layout-content iframe {
+		max-width: 100%;
+	}
+
 	table.profile-table,
 	table.profile-table tbody,
 	table.profile-table tr,
